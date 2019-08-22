@@ -363,3 +363,10 @@ text.recharts-text.recharts-cartesian-axis-tick-value {
 .addressTop {
   margin-top: 60px;
 }
+
+.action-detail.ant-card {
+  &:hover {
+    transform: none;
+  }
+  border-radius: 5px;
+}
