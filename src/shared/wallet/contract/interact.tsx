@@ -10,8 +10,6 @@ import { toRau } from "iotex-antenna/lib/account/utils";
 import { Contract } from "iotex-antenna/lib/contract/contract";
 // @ts-ignore
 import { t } from "onefx/lib/iso-i18n";
-// @ts-ignore
-import { styled } from "onefx/lib/styletron-react";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { copyCB } from "text-to-clipboard";
@@ -226,8 +224,10 @@ class InteractFormInner extends Component<InteractProps, State> {
           },
           ...args
         );
-        window.console.log(result.toString());
-        this.setState({ outputValues: [result] });
+        window.console.log(
+          `readContractByMethod result=${JSON.stringify(result)}`
+        );
+        this.setState({ outputValues: [].concat(result) });
       } catch (e) {
         notification.error({
           message: e.message
