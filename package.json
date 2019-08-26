@@ -146,7 +146,7 @@
     "@types/react-router-dom": "4.3.3",
     "@types/uuid": "3.4.4",
     "@types/validator": "10.11.0",
-    "antd": "3.14.0",
+    "antd": "3.22.1",
     "apollo-cache-inmemory": "1.6.2",
     "apollo-client": "2.6.3",
     "apollo-link-error": "1.1.11",
